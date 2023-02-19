@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/ic_launcher_background"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".entekhab_naghsh"></activity>
+        <activity android:name=".Night"></activity>
+        <activity android:name=".entekhab_naghsh" />
         <activity android:name=".cardgf" />
         <activity android:name=".card" />
         <activity android:name=".MainActivity">

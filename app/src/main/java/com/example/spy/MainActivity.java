@@ -1,6 +1,7 @@
 package com.example.spy;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final EditText editText=findViewById(R.id.edit_txt);
+
         final EditText editText2=findViewById(R.id.edit_txt2);
         final Button start_btn=this.findViewById(R.id.start_btn);
 
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
 
     }
