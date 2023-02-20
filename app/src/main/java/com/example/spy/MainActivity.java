@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //card.num_of_players=Integer.parseInt(editText.getText().toString());
                 //card.num_of_spys=Integer.parseInt(editText2.getText().toString());
-                final Intent intent=new Intent(getApplicationContext(),card.class);
+                final Intent intent=new Intent(getApplicationContext(),Night.class);
                 startActivity(intent);
             }
         });

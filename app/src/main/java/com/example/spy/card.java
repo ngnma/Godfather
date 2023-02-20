@@ -22,7 +22,7 @@ public class card extends AppCompatActivity {
     int counter=0;
     boolean show_word=true;
     int[] src_roles;
-    static HashMap<String, Integer> role_map;
+    static HashMap<Integer,String> role_map;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,17 +31,17 @@ public class card extends AppCompatActivity {
 
         //roles= new String[]{"ساول گودمن","ماتادور","دکتر واتسون","شهروند ساده","نوستراداموس","کنستانتین","لیون","همشهری کین","پدرخوانده","مافیا ساده"};
         src_roles = new int[]{R.drawable.doctor,R.drawable.godfather,R.drawable.good,R.drawable.kein,R.drawable.konstantin,R.drawable.leon,R.drawable.mafia,R.drawable.matador,R.drawable.nostradamous,R.drawable.shahr};
-        role_map = new HashMap<String, Integer>();
-        role_map.put("NEGIN",R.drawable.doctor);
-        role_map.put("NARGES",R.drawable.godfather);
-        role_map.put("LJN",R.drawable.good);
-        role_map.put("AKS",R.drawable.kein);
-        role_map.put("ASJHCBJ",R.drawable.konstantin);
-        role_map.put("KAJSNC",R.drawable.leon);
-        role_map.put("KNJ",R.drawable.mafia);
-        role_map.put("ALKCSN",R.drawable.matador);
-        role_map.put("uoih",R.drawable.nostradamous);
-        role_map.put("res",R.drawable.shahr);
+        role_map = new HashMap<Integer,String>();
+        role_map.put(R.drawable.doctor,"negin");
+        role_map.put(R.drawable.godfather,"narges");
+        role_map.put(R.drawable.good,"rasoul");
+        role_map.put(R.drawable.kein,"moslem");
+        role_map.put(R.drawable.konstantin,"nafise");
+        role_map.put(R.drawable.leon,"samira");
+        role_map.put(R.drawable.mafia,"amir");
+        role_map.put(R.drawable.matador,"nooshin");
+        role_map.put(R.drawable.nostradamous,"hamed");
+        role_map.put(R.drawable.shahr,"elahe");
 
         final EditText name=this.findViewById(R.id.name);
         final ConstraintLayout back=findViewById(R.id.back);
@@ -69,12 +69,12 @@ public class card extends AppCompatActivity {
             }
         });
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                name.foc(false);
-            }
-        });
+//        back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                name.foc(false);
+//            }
+//        });
     }
 
 }
